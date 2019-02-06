@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+    <ImageView
+        android:id="@+id/id_hotel_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/hotel"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/id_hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:text="Restaurant Name"
+        android:textSize="20dp"
+        android:textColor="#000"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintLeft_toRightOf="@+id/id_hotel_img"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_hotel_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant Address"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintLeft_toRightOf="@+id/id_hotel_img"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_hotel_name" />
+
+    <TextView
+        android:id="@+id/id_hotel_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estimated Time"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintLeft_toRightOf="@+id/id_hotel_img"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_hotel_address" />
+    <View
+        android:id="@+id/viewSeparator"
+        style="@style/Divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_hotel_img"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/id_hotel_veg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vegitarian"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparator"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/id_hotel_dish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Dish Name"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintLeft_toRightOf="@id/id_hotel_veg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="100.00"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintLeft_toRightOf="@id/id_hotel_dish"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparator" />
+    <ImageView
+        android:id="@+id/id_hotel_nonveg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nonveg"
+        app:layout_constraintTop_toBottomOf="@+id/id_hotel_veg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/id_hotel_dish2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Dish Name"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintLeft_toRightOf="@id/id_hotel_veg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_hotel_dish"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="100.00"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintLeft_toRightOf="@id/id_hotel_dish2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_hotel_dish" />
+    <View
+        android:id="@+id/viewSeparator2"
+        style="@style/Divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_hotel_nonveg"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/id_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restaurant Bill"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparator2"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/id_item_total"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:text="Item Total"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_bill" />
+
+    <TextView
+        android:id="@+id/id_item_total_amnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="200.00"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintLeft_toRightOf="@+id/id_item_total"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_bill" />
+
+    <TextView
+        android:id="@+id/id_pack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Packing Charges"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_item_total" />
+
+    <TextView
+        android:id="@+id/id_pack_amnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="10.00"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintLeft_toRightOf="@+id/id_pack"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_item_total" />
+
+    <TextView
+        android:id="@+id/id_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Delivery Charges"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_pack" />
+
+    <TextView
+        android:id="@+id/id_delivery_amnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="10.05"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintLeft_toRightOf="@+id/id_delivery"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_pack" />
+    <View
+        android:id="@+id/viewSeparator3"
+        style="@style/Divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_delivery"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/id_grant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Grant Total"
+        android:textColor="#000"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparator3" />
+
+    <TextView
+        android:id="@+id/id_grant_amnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="220.05"
+        android:textColor="#000"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintLeft_toRightOf="@+id/id_grant"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparator3" />
+
+    <View
+        android:id="@+id/viewSeparator4"
+        style="@style/Divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_grant"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:background="#217E27"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparator4"
+        android:layout_marginTop="80dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

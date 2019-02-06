@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ScrollView
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<android.support.v7.widget.SearchView
+        android:id="@+id/id_search"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/title_search"
-            android:textSize="30sp"/>
-    </ScrollView>
-</android.support.constraint.ConstraintLayout>
+        android:layout_height="wrap_content"
+        app:queryHint="Search here"
+        android:clickable="true"/>-->
+    <EditText
+        android:id="@+id/id_editText_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="#DDD6D6"
+        android:ems="10"
+        android:hint="Search for Restaurent"
+        android:drawableLeft="@drawable/ic_search"
+        />
+    <TextView
+        android:id="@+id/id_recent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No recent search to show"
+        android:layout_below="@+id/id_editText_search"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textSize="18dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recycler_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/id_editText_search">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

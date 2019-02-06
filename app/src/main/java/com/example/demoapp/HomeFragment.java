@@ -60,31 +60,110 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
         hotelsList = new ArrayList<>();
         recyclerView = view.findViewById(R.id.id_recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         hotelsList.add(new Hotels(
-                "Hotel Name 1  grt gre re ter re tre tret er tre tertertrtre ter Hotel Name 1  grt gre re ter re tre tret er tre tertertrtre ter Hotel Name 1  grt gre re ter re tre tret er tre tertertrtre ter",
+                "Le Arabia",
                 "Description",
                 "10 mins",
                 4.5f,
                 R.drawable.food));
         hotelsList.add(new Hotels(
-                "Hotel Name 2",
+                "Halais",
                 "Description",
                 "10 - 15 mins",
                 4.5f,
                 R.drawable.food));
         hotelsList.add(new Hotels(
-                "Hotel Name 3",
+                "Al Baike",
                 "Description",
                 "10 mins",
                 4.5f,
                 R.drawable.food));
         hotelsList.add(new Hotels(
-                "Hotel Name 4",
+                "Al Saj",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Ambrosia",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Ajwa",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Dhaba Project",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Terrace",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Cricket Shack",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Dhe Kozhikkodan",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Sharavanabhavan",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Dominos",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Poomaram",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Dhaba Project",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Arabian Tasty Cafe",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Turf",
+                "Description",
+                "10 mins",
+                4.5f,
+                R.drawable.food));
+        hotelsList.add(new Hotels(
+                "Arabic Paradice",
                 "Description",
                 "10 mins",
                 4.5f,
